@@ -1,0 +1,726 @@
+	/*GLOBAL*/
+:root {
+    --major:#46587f;
+    --minor:#ff697c;
+    --centauri:#d9bba0;
+    --latte:#fff8e7;
+    --black:#444444;
+    --white:#ffffff;
+}
+::selection{
+    background: rgba(211, 88, 104, 0.9);
+    color: var(--major);
+}
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.mobvisible{
+    display: none;
+}
+.sronly{
+    display: block;
+    position: fixed;
+    left: -90000px;
+}
+/*STYLES*/
+h1{
+    font-family: 'Syne', sans-serif;
+    font-size: 2.75em;
+    line-height: 2.5rem;
+    font-weight: 800;
+}
+h2{
+    font-family: 'Syne', sans-serif;
+    font-size: 2.5em;
+    line-height: 5rem;
+    color: var(--black);
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 400;
+} 
+h6{
+    font-family: 'Syne', sans-serif;
+    font-weight: 900;
+    color: var(--latte);
+    font-size:1.1em;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    line-height: 1.4em;
+    font-size: 1.25em;
+}
+a{
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    text-decoration: none;
+}
+#sect2 p, #sect3 p{
+    color: var(--black);
+}
+#sect2 h3, #sect3 h3{
+    color: var(--black);
+}
+#sect2 a,#sect3 a{
+    color: var(--minor);
+}
+.anim{
+    transition: opacity 150ms;
+}
+.anim:hover{
+    opacity: 50%;
+}
+.shift-10{
+    margin-left: -10px;
+}
+.black{
+    color: #444 !important;
+}
+.btn{
+    padding: 25px;
+    background-color: var(--minor);
+    color: white !important;
+    display: inline-block;
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+}
+.tilegrid{
+display: flex;
+gap: 60px;
+margin-bottom: 75px;
+}
+.tile{
+    width: 12vw;
+    height: 17vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 25px;
+    transition: 150ms;
+    margin-top: 25px;
+}
+.tile h3{
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    margin: .75vw 25px;
+    font-weight: 900;
+    font-size: 1.65em;
+}
+.tile img{
+    border-radius: 25px 25px 0px 0px;
+    width: 12vw;
+    height: 12vw;
+    object-fit: cover;
+}
+.tile:hover{
+    transform: scale(110%) ;
+    box-shadow: var(--black) 25px 25px 0px;
+}
+/*LAYOUT*/
+body{
+    margin: 0;
+    padding:0;
+    background-color: var(--major);
+    
+}
+nav{
+    width: 300px;
+    min-height: 100vh;
+    float:left;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    background-color: var(--white);
+}
+#navlogo{
+    height:300px;
+    width:300px;
+    margin-bottom: 0;
+}
+nav div img{
+    display: block;
+    margin: auto;
+    margin-top: 25%;
+    width: 150px;
+}
+nav ul a{
+    height: 75px;
+    text-decoration: none;
+}
+nav ul{
+    margin:0;
+    padding:0;
+
+}
+nav ul a li{
+    font-family: 'Syne', sans-serif;
+    font-size: 1.25em;
+    padding: 35px 0px 35px 75px;
+    list-style-type: none;
+    color: var(--major);
+    background-color:var(--white);
+    font-weight: 900;
+    border-top: var(--major) solid 1px;
+    transition: 150ms;
+    opacity: 100% !important;
+}
+nav ul a li:hover{
+    background-color: var(--minor);
+    color: var(--white);
+    opacity: 100% !important;
+}
+.navselect{
+    background-color: var(--centauri) !important;
+}
+
+
+
+/*MAIN*/
+section h1{
+margin-top: 0;
+}
+section{
+    padding: 145px 150px 150px 450px;
+}
+
+#sect2{
+    background-color: var(--centauri);
+}
+#sect2 p{
+    color: var(--black);
+}
+#sect3{
+    background-color: var(--latte);
+}
+#sect3 p{
+    color: var(--black);
+}
+.sectcontent{
+    max-width: 1200px;
+}
+#lander h1{
+    min-height: 5em;
+}
+#rataerois1{
+    color: var(--white);
+}
+#rataerois2{
+    color: #d9bba0;
+}
+
+
+/*PROFILE-SPECIFIC*/
+#profileonestop{
+    padding: 25px;
+    width: 800px;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 250px 1fr 40px;
+    grid-template-rows: 20% 20% 20% 20%;
+    margin: -125 auto 0 auto;
+}
+#profilepicture{
+    width: 250px;
+    height: 250px;
+    grid-column: 1;
+}
+#profileonestop h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: var(--black);
+    margin: -20px 0 -5px 25px;
+    font-size: 3em;
+    grid-row: 1;
+}
+#profileonestop h3{
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    margin: 0 0 0 25px;
+}
+#profileonestop h3 span{
+    color: var(--minor);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#profilename{
+    grid-column: 2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 0;
+    margin: 15px 0px 0px;
+}
+#profilesocial{
+grid-column: 3;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.socialicon{
+    width: 40px;
+}
+    .tile h4{
+        color: var(--major);
+        font-family: 'Poppins', sans-serif;
+        margin: -10px 25px 25px 25px;
+        font-weight: 100;
+    }
+/*FOOTER*/
+footer{
+    z-index: 1000;
+    height: 200px;
+    max-height: 250px;
+    width: 100%;
+    position: absolute;
+    background-color: var(--black);
+    padding: 35px 75px 35px 75px;
+    align-items: center;
+}
+#ftcontainer{
+    display: flex;
+    gap: 75px;
+    margin-top: 20px;
+}
+#ftsocial{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+#ftsocial img{
+width: 41px;
+}
+.ftsect{
+    display: flex;
+    flex-direction: column;
+}
+.ftsect h6{
+    margin:0 0 10px 0px;
+}
+.ftsect a{
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    text-decoration: none;
+}
+.ftsect p{
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    font-size: unset;
+    margin:0;
+    height: 24.6px;
+}
+#ftlogo svg{
+    width: 150px;
+    bottom: 60px;
+    right: 225px;
+    position: absolute;
+    transition: animation 150ms;
+}
+#ftlogo svg path:hover{
+    animation: 3s infinite colorfade;
+}
+    @keyframes colorfade {
+        0%{
+            fill:#fff8e7
+        }
+        25%{
+            fill: #d9bba0;
+        }
+        50%{
+            fill: #ff697c;
+        }
+        75%{
+            fill: #46587f;
+        }
+        100% {
+            fill:#ffffff;
+        }
+}
+
+/*MQUERY!!! FUCK MOBILE FUCK MOBILE FUCK MOBILE FUCK MOBILE*/
+
+@media only screen and (max-width:2100px){
+    .tilegrid{
+        flex-wrap: wrap;
+        gap:60px;
+    }
+    .tile{
+        width: 200px;
+        height: 300px;
+  
+    }
+    .tile h3{
+    font-size: 1.35em;
+    margin-top: 20px;
+    }
+    .tile img{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media only screen and (min-width:2000px){
+    #profileonestop{
+        width: 1000px;
+    }
+    h1{
+        font-size: 3.75em;
+        line-height: 3.75rem;
+    }
+
+}
+
+@media only screen and (max-width:1622px){
+    #profileonestop{
+        width: 45vw;
+        margin-top: -50px;
+    }
+    #profilename h2{
+        font-size: 2.25em;
+    }
+    #profilename h3{
+        font-size: 1.25em;
+    }
+    h1{
+        font-size: 2.35vw;
+        line-height: 2rem;
+    }
+
+}
+@media only screen and (max-width:1475px){
+    #profileonestop{
+        width: 45vw;
+        margin-top: -50px;
+    }
+    #profilename{
+        max-width: calc(45vw - 250px);
+    }
+    #profilename h2{
+        font-size: 2.25em;
+    }
+    #profilename h3{
+        font-size: 1.1em;
+    }
+    #profilesocial{
+        display: none;
+    }
+
+
+    
+    h1{
+        font-size: 2.35vw;
+        line-height: 2rem;
+    }
+}
+@media only screen and (max-width:1320px){
+    h1{
+        font-size: 1.5em;
+        line-height: 1.5rem;
+        margin-bottom: 50px;
+    }
+    #profileonestop .mobinvisible{
+        display: none;
+    }
+}
+@media only screen and (max-width:1279px){
+    #ftlogo svg{
+        display:none;
+    }
+    .tile{
+        width: 200px;
+        height: 300px;
+    }
+    .tile h3{
+        font-size: 1.25em;
+    }
+@media only screen and (max-width:1155px) {
+    h1{
+        font-size: 3.9vw;
+        line-height: 3.9vw;
+        margin-bottom: 100px;
+    }
+    #profileonestop{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+    #profilename{
+        margin-left: -25px;
+        width: 250px;
+    }
+    #profline3{
+        width: 250px;
+    }
+    #profilesocial{
+        margin-top: 25px;
+        display: inline-flex;
+        flex-direction: row;
+    }
+    #profilesocial img{
+        all: unset;
+        width: 40px;
+    }
+}
+@media only screen and (max-width:1060px) {
+    .tilegrid{
+        gap: 50px;
+    }
+    .tile{
+        width: 175px;
+        height: 275px;
+    }
+    .tile img{
+        width: 175px;
+        height: 175px;
+    }
+}
+@media only screen and (max-width:1022px){
+    #rataerois2{
+        position: relative;
+        top: -40px;
+    }
+}
+@media only screen and (max-width:1000px){
+    .tile{
+        width: 35vw;
+        height: 50vw;
+    }
+    .tile img{
+        width: 35vw;
+        height: 35vw;
+    }
+    .tile h3{
+        font-size: 2em;
+    }
+}
+@media only screen and (max-width:800px){
+    #profileonestop{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+    #profilename{
+        margin-left: -25px;
+        width: 250px;
+    }
+    #profline3{
+        width: 250px;
+    }
+    #profilesocial{
+        margin-top: 25px;
+        display: inline-flex;
+        flex-direction: row;
+    }
+    #profilesocial img{
+        all: unset;
+        width: 40px;
+    }
+
+    #rataerois1{
+        max-width: 250px;
+        max-height: 289px;
+        display: inline-block;
+    }
+    #rataerois2{
+        position:unset;
+
+    }
+    h1{
+        position: relative;
+        top: -25px;
+    }
+    .mobinvisible{
+        display: none;
+    }
+    .mobvisible{
+        display: unset;
+    }
+    nav{
+        background-color: unset;
+        display: inherit;
+    }
+    nav ul a li{
+        border-top: none;
+    }
+    #ftlogo svg{
+        display:none;
+    }
+    header{
+        display: flex;
+        flex-direction:row;
+        position:fixed;
+        padding: 15px 50px;
+        background-color: var(--major);
+        width: 100vw;
+        z-index: 10;
+    }
+    header img{
+        width: 50px;    
+    }
+    .mobheadlogo{
+        position: fixed;
+        left: calc(50% - 25px);
+    }
+
+    section{
+        padding: 20vh 150px 20vh 150px;
+    }
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: var(--white);
+        overflow-x: hidden;
+        transition: 150ms;
+  }
+    .overlay-content {
+        position: relative;
+        top: 20%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    #navlogoopen{
+        position: relative;
+        top: 15px;
+        left: calc(50% - 78px);
+
+    }
+    .overlay-content a{
+        text-decoration: none;
+    }
+    .overlay-content a li:hover{
+            color: var(--white);
+            background-color: var(--minor);
+    }
+    .overlay-content a li{
+        height: 100px;
+        list-style-type: none;
+        font-family: 'Syne', sans-serif;
+        color: var(--major);
+        font-size: 2em;
+        font-weight: 800;
+        transition: 200ms;
+    }
+    .navlink{
+        position: relative;
+        top: 30%;
+    }
+    #ftsocial{
+        display: flex;
+        flex-direction: row;
+    }
+    #ftsocial img{
+        padding-top: 29.5px;
+    }
+    .closebtn{
+        top: 15px;
+        left: 50px;
+        position: relative;
+    }
+    #ftcontainerm{
+      background-color: var(--black);
+      position: relative;
+      width: 100%;
+      height: 100px;
+      bottom: 0px;
+      transition-delay: 50ms;
+      transition: opacity 200ms;
+  }
+    .mobinvisible{
+        display: none;
+    }
+    h1{
+        font-size: 7vw;
+        line-height: 7vw;
+    }
+    h2{
+        font-size: 7vw;
+    }
+    h3{
+        font-size: 1.25em;
+        line-height: 1.65rem;
+    }
+    p{
+        font-size:1.25em
+    }
+    section{
+        padding: 20vh 50px 20vh 50px;
+    }
+    footer{
+        display: none;
+    }
+    .tilegrid{
+        gap: 25px;
+        margin-left: 3%;
+    }
+    .tile{
+        width: 40vw;
+        height: 60vw;
+    }
+    .tile img{
+        width: 40vw;
+        height: 40vw;
+    }
+    .tile h3{
+        font-size: 3.5vw;
+        line-height: 4.5vw;
+    }
+    .tile:hover{
+        transform: scale(100%);
+        box-shadow: var(--black) 15px 15px 0px;
+    }
+
+}
+}
+@media only screen and (max-width:720px){
+    .mobinvisible{
+        display: none;
+    }
+    h1{
+        font-size: 6.75vw;
+        line-height: 6.75vw;
+    }
+    h2{
+        font-size: 7vw;
+    }
+    h3{
+        font-size: 1.25em;
+        line-height: 1.65rem;
+    }
+    p{
+        font-size:1.25em
+    }
+    footer{
+        display: none;
+    }
+    .tilegrid{
+        gap: 25px;
+    }
+    .tile{
+        width: 75vw;
+        height: 100vw;
+    }
+    .tile img{
+        width: 75vw;
+        height: 75vw;
+    }
+    .tile h3{
+        font-size: 6vw;
+        line-height: 7.5vw;
+    }
+
+}
