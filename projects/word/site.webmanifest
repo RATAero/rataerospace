@@ -1,6 +1,6 @@
 {
     "name": "Legally Distinct Word Game",
-    "short_name": "Word Game",
+    "short_name": "LDWG",
     "icons": [
         {
             "src": "/projects/word/android-chrome-192x192.png",
@@ -15,5 +15,5 @@
     ],
     "theme_color": "#46587f",
     "background_color": "#46587f",
-    "display": "standalone"
+    "display": "fullscreen"
 }
