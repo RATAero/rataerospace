@@ -1,6 +1,7 @@
 {
     "name": "Legally Distinct Word Game",
     "short_name": "LDWG",
+    "start_url": "/projects/word",
     "icons": [
         {
             "src": "/projects/word/android-chrome-192x192.png",
