@@ -6,7 +6,7 @@
     insights.trackPages();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-
+    <link rel="manifest" href="site.webmanifest">
     <title>Legally Distinct Word Game - RAT Aerospace Technologies</title>
     <meta name="description" content="Guess today's word in 6 tries or less. Good luck!">
 
@@ -137,6 +137,12 @@
     </script>
     <script src="./word/main.e65ce0a5.js.download"></script>
     <game-app></game-app>
-  
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+                 .register('sw.js')
+                 .then(function() { console.log("Service Worker Registered"); });
+      }
+      </script>
 
 </body></html>
