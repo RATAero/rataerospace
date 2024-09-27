@@ -96,6 +96,13 @@ button{
     border: none;
     font-size: 1em;
 }
+details summary{
+    font-family: 'Poppins', sans-serif;
+    color: var(--major);
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 900;
+}
 .black{
     color: var(--black);
 }
@@ -113,6 +120,18 @@ button{
 }
 #sect2 a,#sect3 a{
     color: var(--minor);
+}
+#sectnotice h2{
+    color: var(--white);
+}
+#sectnotice .btn{
+        padding: 25px;
+        background-color: var(--white);
+        color: var(--major) !important;
+        display: inline-block;
+        margin: 25px 25px 25px 0px;
+        font-family: 'Syne', sans-serif;
+        font-weight: 650;
 }
 .anim{
     transition: opacity 150ms;
@@ -229,6 +248,11 @@ nav ul a li:hover{
 /*MAIN*/
 section{
     padding: 15vh 150px 15vh 450px;
+}
+
+#sectnotice{
+    background-color: var(--minor);
+    color: var(--white);
 }
 
 #sect2{
