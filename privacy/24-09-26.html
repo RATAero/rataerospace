@@ -3,7 +3,6 @@
     welcome 2 my fucked up world xoxo
     if you're looking to see my coding style, welcome! i've spent a lot of time doing the same thing, and I hope that something on here is helpful to you.
 
-    if you're just starting out, feel free to check out our resources page at https://rataero.space/resources. we're all mostly self-taught, so we understand how difficult it can be to understand new tools, gain new skills, etc., without a guided education.
     if you want to see what makes this site tick, feel free to check out our page at https://github.com/RATAero. it's also in the footer of this page.
 
     if you notice something that you think could be done differently, absolutely feel free to reach out! i'm always open to constructive criticism.
@@ -20,7 +19,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/profile.css">
+    <link rel="stylesheet" href="/main.css">
  
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,43 +36,43 @@
     <meta name="theme-color" content="#46587f">
     <!--meta card info below! 
         edit this to change what shows up on the preview when shared on social media.-->
-    <meta property="og:title" content="RAT Aerospace Technologies // Peri, LonePeriwinkle"/>
+    <meta property="og:title" content="RAT Aerospace Technologies"/>
     <meta property="og:type" content="website"/>
     <meta property="og:description" content="RAT Aerospace Technologies is an artist collective, built on a foundation of clear, accessible, and honest design.">
     <meta property="og:url" content="https://www.rataerospace.com"/>
-    <meta property="og:image" content="http://rataero-staging.netlify.com/img/meta/perimeta.png"/>
-    <meta property="og:image:alt" content="A text-only image stating RAT Aerospace Technologies is Peri, LonePeriwinkle, with the logo in the bottom right corner.">
+    <meta property="og:image" content="http://rataerospace.com/img/meta/meta.png"/>
+    <meta property="og:image:alt" content="A text-only image stating RAT Aerospace Technologies is an artist collective with the logo in the bottom right corner.">
     <!--we use insights for our analytics. they're an open-source, privacy focused analytics software.
-        the only thing we can see about you is that you visited the website and if you found a few easter eggs (more for my own happiness ;)
-        if you're curious about what we know about you, check our privacy policy! it's available at rataero.space/privacy -->
+    the only thing we can see about you is that you visited the website and if you found a few easter eggs (more for my own happiness ;)
+    if you're curious about what we know about you, check our privacy policy! it's available at rataero.space/privacy -->
     <script src="https://getinsights.io/js/insights.js"></script>
 <script>
 insights.init('LTvLQ0TpaOWprlSx');
-insights.trackPages();
-</script>
-
-    <title>RAT Aerospace Technologies - Peri</title>
-
-
+    insights.trackPages();
+    </script>
     <style>
-        #profileonestop{
-            box-shadow: #607DB7 25px 25px;
+        p{
+            transition: background 250ms;
+            transition: padding 250ms;
         }
-@media only screen and (max-width:768px){
-    #profileonestop{
-        box-shadow: #607DB7 18.75px 18.75px;}
-    }
-    #lander{
-        height: calc(50vw - 400px);
-    }
-    #sect2,#sect3{
-        display: none;
-    }
-    footer{
-        position: fixed;
-        bottom: 0px;
-    }
+        p:target{
+            background: #ff697c;
+            padding: 10px;
+        }
+        .privinfo{
+            border-left: var(--centauri) 10px solid;
+        }
+        .privinfo p{
+            margin-left: 20px;
+        }
+        h2{
+            margin-top: 100px;
+        }
+        .firsth2{
+            margin-top: unset;
+        }
     </style>
+    <title>RAT Aerospace Technologies - Privacy Policy</title>
 </head>
 <body>
     <header class="mobvisible">
@@ -81,7 +80,7 @@ insights.trackPages();
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="/img/intbrand/navclose.svg" alt="Close Menu"></a>
             <a href="https://rataerospace.com"><img id="navlogoopen" src="/img/intbrand/rat_logo_full_color_rgb.svg" alt="Navigation"></a>
             <div class="overlay-content">
-                <a href="https://rataerospace.com" id="navhome" class="navbutton noopaanim"><li><span class="navlink">Home</span></li></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://rataerospace.com" id="navhome" class="navbutton noopaanim"><li><span class="navlink">Home</span></li></a>
                 <a href="/about" id="navabout" class="navbutton noopaanim"><li><span class="navlink">About</span></li></a>
                 <a href="/team" id="navteam" class="navbutton noopaanim"><li><span class="navlink">Team</span></li></a>
                 <div>
@@ -112,7 +111,7 @@ insights.trackPages();
         <ul>
             <a href="https://rataerospace.com" id="navhome" class="navbutton noopaanim"><li>Home</li></a>
             <a href="/about" id="navabout" class="navbutton noopaanim"><li>About</li></a>
-            <a href="/team" id="navteam" class="navbutton noopaanim navselect"><li class="navselect">Team</li></a>
+            <a href="/team" id="navteam" class="navbutton noopaanim navselect"><li>Team</li></a>
         </ul>
     </nav>
 
@@ -125,37 +124,65 @@ insights.trackPages();
     <main>
         <section id="lander">
             <!--type-on effect made possible by the wonderful typeonjs tool! more info at the bottom of the code!-->
-            <h1><span id="rataerois1">RAT Aerospace Technologies</span><span id="rataerois2" aria-hidden="true"><br></span><span class="sronly" aria-hidden="false">Peri, loneperiwinkle</span></h1>
-            <article id="profileonestop">
-                <img id="profilepicture" class="profilesect" src="/img/profile/periprof.jpeg" alt="A minimal, black & white illustration of Peri with a large, round earring, necklace, and a periwinkle blush.">
-                <div id="profilename" class="profilesect">
-                    <div>
-                        <h2>Peri</h2>
-                        <h3 id="profline1">they/them <span class="mobinvisible shft-10">//</span> @loneperiwinkle</h3>
-                        <h3 id="profline2">peri<span>at</span>rataero<span class="shift-10"><span>dot</span><span class="shift-10 black">space</span></span></h3>
-                    </div>
-                    <div>
-                        <h3 id="profline3">Illustrator, Character Designer, 3D Modeler, Video Editor</h3>
-                    </div>
-                </div>
-                <div id="profilesocial" class="profilesect">
-                    <a class="anim extlink" target="_blank" rel="noopener noreferrer" href="https://lonelyperiwinklecomms.carrd.co/"><img src="/img/intbrand/web.svg" alt="Commission Information" class="socialicon"></a>
-                    <a class="anim extlink" target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/user/i7wc02aarfql66dfw2hu8c74u"><img src="/img/extbrand/spotify.svg" alt="Spotify" class="socialicon"></a>
-                    <a class="anim extlink" target="_blank" rel="noopener noreferrer" href="https://www.twitch.tv/periwingle2v"><img src="/img/extbrand/twitch.svg" alt="Twitch"class="socialicon"></a>
-                    <a class="anim extlink" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/lone.periwinkle/"><img src="/img/extbrand/instagram.svg" alt="Instagram"></a>
-                </div>
-            </article>
-            
+            <h1><span id="rataerois1">RAT<br>Aerospace<br>Technologies</span><span id="rataerois2" aria-hidden="true"><br></span><span class="sronly" aria-hidden="false">is transparent, by design.</span></h1>
         </section>
         <section id="sect2">
             <div class="sectcontent">
-            <h2>About.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem possimus laborum dicta aperiam totam, dolores quaerat? Perferendis libero ullam nulla alias facere? Officia magnam hic dolores consequuntur fuga eaque sequi?</p>
+            <h2 class="firsth2">Preface.</h2>
+            <p>RAT Aerospace Technologies believes that privacy is a human right. Nothing we do will intentionally infringe on this.</p>
+            <p>If you have questions or concerns about our privacy policy, please feel free to reach out to us at hey&nbsp;at&nbsp;rataerospace&nbsp;dot&nbsp;com.</p>
+            <p><i>This policy was last updated <time datetime="2024-09-26 00:00">September 26, 2024.</time></i></p>
+            <details >
+                <summary class="anim">See previous versions</summary>
+                <a class="anim" href="./21-12-29.html">December 29, 2021</a>
+            </ul>
         </div>
         </section>
         <section id="sect3">
-            <h2>Projects.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem possimus laborum dicta aperiam totam, dolores quaerat? Perferendis libero ullam nulla alias facere? Officia magnam hic dolores consequuntur fuga eaque sequi?</p>
+            <div class="sectcontent">
+            <h2 class="firsth2">Definitions.</h2>
+                <p id="we"><dfn>'We'</dfn>, <dfn>‘the Organization’</dfn>, and <dfn>‘RAT’</dfn> will be used interchangeably with RAT Aerospace Technologies and may represent the organization as a whole and/or a single member.</p>
+                <p id="you"><dfn>'You’</dfn>, <dfn>‘Users’</dfn>, and <dfn>‘Visitors’</dfn> represent anyone using or viewing a work by RAT Aerospace Technologies.</p>
+                <p id="work"><dfn>‘Work’</dfn> and <dfn>'Works'</dfn> represent a piece of art, writing, or other form of creative expression.</p>               
+                <p id="services"><dfn>‘Services’</dfn> and <dfn>‘Service’</dfn> represent any organization providing a tool, software, or other assistance to RAT Aerospace Technologies.</p>              
+                <p id="form"><dfn>‘Form’</dfn> and <dfn>‘Forms’</dfn> are a way for us to collect information from our Users with their explicit consent.</p>
+            <h2>Information We Collect.</h2>
+                <p>RAT Aerospace Technologies makes an effort to protect your identity and anonymity.</p>
+                <p>The information we collect through a number of <a href="#services">Services</a> are as follows:</p>
+                <h3>Page Views and Sessions</h3>
+                <blockquote class="privinfo">
+                    <p><b>Goal:</b> To view how many times certain pages within our website(s) are viewed. This information may be used in conjunction with other non-personally&#8211;identifying information to make changes within our <a href="#work">Works</a>.</p>
+                    <p><b>Specifically:</b> Total page views over all pages, distinct pages viewed and their personal view-counts, the first page viewed in a session, number of sessions, and bounce rate.</p>
+                </blockquote>
+                <h3>Language</h3>
+                <blockquote class="privinfo">
+                    <p><b>Goal:</b> To ensure that our <a href="#work">Works</a> are accessible to everyone, guiding us to make translations available when possible.</p>
+                    <p><b>Specifically:</b> The language <a href="#you">You</a> have set in your browser or system.</p>
+                </blockquote>
+                <h3>Usage Information</h3>
+                <blockquote class="privinfo">
+                    <p><b>Goal:</b> To better understand how <a href="#you">You</a> move through our website(s) and make changes based on that data to make the website more accessible, and to tailor our <a href="#work">Work</a> to our audience as a whole.</p>
+                    <p><b>Specifically:</b> Screen size <i>(in the categories of ‘Phone’, ‘Small Laptop’, ‘Large Laptop’, and ‘Desktop’),</i> Time spent on any page <i>(broadly, not broken down by specific page, and in the categories of &lt;5s, &lt;15s, &lt;30s, &lt;1m, &lt;5m, and &gt;5m)</i>, Browser and Operating System, and Referrer.</p>
+                </blockquote>
+                <h3>Personally Identifying Information (PII) given directly from you, with your consent.</h3>
+                <blockquote class="privinfo">
+                    <p><b>Goal:</b> To respond to any inquiries or contact requests sent to us through a <a href="#form">Form</a>.</p>
+                    <p><b>Specifically:</b> Total page views over all pages, distinct pages viewed and their personal view-counts, the first page viewed in a session, number of sessions, and bounce rate.</p>
+                </blockquote>
+            <h2>Services</h2>
+                <h3>Insights</h3>
+                <p><a href="https://getinsights.io">Insights</a> is a privacy-focused analytics provider, used to analyze how our website(s) and works are used and by who. Insights briefly stores hashed versions of your IP address(es) for fraud prevention. This information is promptly deleted, and neither We nor Insights have access to it. Insights does not collect any Personally Identifying Information (PII) and do not transfer or sell information to third parties except for when required by law.</p>
+                <p>Information about Insights and the data Insights collects can be found at their <a target="_blank" class="extlink" rel="noopener noreferrer" href="https://getinsights.io/what-data-we-collect">What Data We Collect</a> page. Insights’s privacy policy, while more generally intended for direct users of their platform, (e.g. RAT Aerospace Technologies,) <a target="_blank" class="extlink" rel="noopener noreferrer" href="https://getinsights.io/privacy">can be found here</a>.</p>
+                <h3>Cloudflare</h3>
+                <p><a href="https://cloudflare.com">Cloudflare</a> is our web-hosting platform. The information Cloudflare collects include (but is not limited to) your connection information, system configuration, and 'other information'.</p>
+                <p>We utilize Cloudflare’s Workers feature for <a href="#form">Forms</a>, allowing RAT Aerospace Technologies to collect Personally Identifying Information (PII) from You. This information is sent to Us directly.</p>
+                <p>Cloudflare's Privacy Policy can be found <a target="_blank" class="extlink" rel="noopener noreferrer" href="https://www.cloudflare.com/privacypolicy/#2-information-we-collect-categories-of-data-subjects">here</a>, with information pertaining to You at the header 'End Users'.</p>
+                <h3>Playbook</h3>
+                <p><a href="https://playbook.com/">Playbook</a> is our asset organization and cloud storage service. Unless you’re a client of RAT or one of our members, the only time you’ll run into Playbook is through the <a target="_blank" class="extlink" rel="noopener noreferrer" href="https://www.playbook.com/s/rat/Dr8h23gDLSzZBj5nHfHKXSxj/UbeUfhsMfgXUVaBrhQVTMgzf">Branding</a> link in the footer of our website.</p>
+                <p>Data we receive from Playbook include view counts for specific assets and pages and the number of times an asset has been downloaded.</p>
+                <p>Information about the types of information Playbook collects from you can be found <a target="_blank" class="extlink" rel="noopener noreferrer" href="https://www.playbook.com/p/privacy/#:~:text=Automatic Data Collection.">here</a>.</p>
+                <p>Playbook’s privacy policy, while more generally intended for direct users of their platform, (eg. RAT Aerospace Technologies,) can be found <a target="_blank" class="extlink" rel="noopener noreferrer" href="https://www.playbook.com/p/privacy/">here</a>.</p>
+            </div>
         </section>
     </main>
 
@@ -224,7 +251,8 @@ insights.trackPages();
   cursor: false
 })
   .break()
-  .type("is Peri, loneperiwinkle.", { delay: 750 })
+  .type("is transparent,<br>by design.")
+  
   .go()
         </script>
         
