@@ -5,7 +5,7 @@ self.addEventListener('install', function(e) {
    caches.open('airhorner').then(function(cache) {
      return cache.addAll([
        '/',
-       './word/main.e65ce0a5.js.download',
+       './word/main.e65ce0a5.js',
        '/index.html?homescreen=1',
        '/index.html',
        '/?homescreen=1',
